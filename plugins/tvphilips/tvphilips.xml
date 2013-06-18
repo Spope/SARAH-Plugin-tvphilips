@@ -1,0 +1,69 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="rulePhilips" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="rulePhilips" scope="public">
+    <example>Sarah met TF1</example>
+    <tag>out.action=new Object(); </tag>
+    <item weight="2">Sarah</item>
+    <one-of>
+    <item>met la chaine une <tag> out.action.commande="Digit1"; </tag></item>
+    <item>met T F un <tag> out.action.commande="Digit1"; </tag></item>
+    <item>met la chaine deux <tag> out.action.commande="Digit2"; </tag></item>
+    <item>met France deux <tag> out.action.commande="Digit2"; </tag></item>
+    <item>met la chaine trois <tag> out.action.commande="Digit3"; </tag></item>
+    <item>met France trois <tag> out.action.commande="Digit3"; </tag></item>
+    <item>met la chaine quatre <tag> out.action.commande="Digit4"; </tag></item>
+    <item>met Canal plus<tag> out.action.commande="Digit4"; </tag></item>
+    <item>met la chaine cinq <tag> out.action.commande="Digit5"; </tag></item>
+    <item>met France cinq <tag> out.action.commande="Digit5"; </tag></item>
+    <item>met la chaine six <tag> out.action.commande="Digit6"; </tag></item>
+    <item>met aime six <tag> out.action.commande="Digit6"; </tag></item>
+    <item>met la chaine sept <tag> out.action.commande="Digit7"; </tag></item>
+    <item>met Arté <tag> out.action.commande="Digit7"; </tag></item>
+    <item>met la chaine huit <tag> out.action.commande="Digit8"; </tag></item>
+    <item>met des huit <tag> out.action.commande="Digit8"; </tag></item>
+    <item>met la chaine neuf <tag> out.action.commande="Digit9"; </tag></item>
+    <item>met W neuf <tag> out.action.commande="Digit9"; </tag></item>
+    <item>met la chaine dix <tag> out.action.commande="Digit1,Digit0"; </tag></item>
+    <item>met TMC <tag> out.action.commande="Digit1,Digit0"; </tag></item>
+    <item>met la chaine onze <tag> out.action.commande="Digit1,Digit1"; </tag></item>
+    <item>met NT un <tag> out.action.commande="Digit1,Digit1"; </tag></item>
+    <item>met la chaine douze <tag> out.action.commande="Digit1,Digit2"; </tag></item>
+    <item>met NRJ douze <tag> out.action.commande="Digit1,Digit2"; </tag></item>
+    <item>met la chaine treize <tag> out.action.commande="Digit1,Digit3"; </tag></item>
+    <item>met la chaine parlementaire <tag> out.action.commande="Digit1,Digit3"; </tag></item>
+    <item>met la chaine quatorze <tag> out.action.commande="Digit1,Digit4"; </tag></item>
+    <item>met France quatre <tag> out.action.commande="Digit1,Digit4"; </tag></item>
+    <item>met la chaine quinze <tag> out.action.commande="Digit1,Digit5"; </tag></item>
+    <item>met BFM TV<tag> out.action.commande="Digit1,Digit5"; </tag></item>
+    <item>met la chaine seize <tag> out.action.commande="Digit1,Digit6"; </tag></item>
+    <item>met hi télé <tag> out.action.commande="Digit1,Digit6"; </tag></item>
+    <item>met la chaine dix-sept <tag> out.action.commande="Digit1,Digit7"; </tag></item>
+    <item>met D dix sept <tag> out.action.commande="Digit1,Digit7"; </tag></item>
+    <item>met la chaine dix huit <tag> out.action.commande="Digit1,Digit8"; </tag></item>
+    <item>met Gulli <tag> out.action.commande="Digit1,Digit8"; </tag></item>
+    <item>met la chaine dix neuf <tag> out.action.commande="Digit1,Digit9"; </tag></item>
+    <item>met France ho <tag> out.action.commande="Digit1,Digit9"; </tag></item>
+    <item>met la chaine vingt <tag> out.action.commande="Digit2,Digit0"; </tag></item>
+    <item>met la chaine vingt et un<tag> out.action.commande="Digit2,Digit1"; </tag></item>
+    <item>met la chaine vingt deux<tag> out.action.commande="Digit2,Digit2"; </tag></item>
+    <item>met la chaine vingt trois<tag> out.action.commande="Digit2,Digit3"; </tag></item>
+    <item>met la chaine vingt quatre<tag> out.action.commande="Digit2,Digit4"; </tag></item>
+    <item>met RMC découverte<tag> out.action.commande="Digit2,Digit4"; </tag></item>
+    <item>met la chaine vingt cinq<tag> out.action.commande="Digit2,Digit5"; </tag></item>
+    <item>met la chaine vingt six<tag> out.action.commande="Digit2,Digit6"; </tag></item>
+    <item>met la chaine vingt sept<tag> out.action.commande="Digit2,Digit7"; </tag></item>
+    <item>met la chaine vingt huit<tag> out.action.commande="Digit2,Digit8"; </tag></item>
+    <item>met la chaine vingt neuf <tag> out.action.commande="Digit2,Digit9"; </tag></item>
+    <item>monte le volume <tag> out.action.commande="VolumeUp,VolumeUp,VolumeUp,VolumeUp,VolumeUp"; </tag></item>
+    <item>baisse le volume <tag> out.action.commande="VolumeDown,VolumeDown,VolumeDown,VolumeDown,VolumeDown,"; </tag></item>
+    <item>monte le son <tag> out.action.commande="VolumeUp,VolumeUp,VolumeUp,VolumeUp,VolumeUp"; </tag></item>
+    <item>baisse le son <tag> out.action.commande="VolumeDown,VolumeDown,VolumeDown,VolumeDown,VolumeDown,"; </tag></item>
+    <item>coupe le son <tag> out.action.commande="Mute"; </tag></item>
+    <item>remet le son <tag> out.action.commande="Mute"; </tag></item>
+    <item>éteint la télé <tag> out.action.commande="Standby"; </tag></item>
+	<item>allume la télé <tag> out.action.commande="Standby"; </tag></item>
+    <!-- Exemple de "Macro" -->
+    <item>met la télé sur la freebox <tag> out.action.commande="Source,WAIT,CursorDown,WAIT,Confirm"; </tag></item>
+    </one-of>
+    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/tvphilips";</tag>
+  </rule>
+</grammar>

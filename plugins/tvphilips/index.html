@@ -1,0 +1,85 @@
+﻿<div id="TVPhilips">
+  <div class="row-fluid">
+	  <div class="span8">
+		  <p>Le module Philips TV est compatible avec certains téléviseurs Philips utilisant l'API <a target="_blank" href="http://jointspace.sourceforge.net/">JointSpace</a>. Il faudra fournir l'adresse IP du téléviseur (pour la trouver : touche HOME, Configuration, Installation, Réseau, Voir paramètres réseau, " adresse IP ")</p>
+		  <h4>Ordres:</h4>
+		  <p>
+			  Le module permet de piloter le téléviseur avec les fonctions classiques:
+			  <ul>
+			    <li>Sarah met la chaine une</li>
+			    <li>Sarah met Canal Plus</li>
+			    <li>Sarah monte le volume</li>
+			    <li>Sarah coupe le son</li>
+			    <li>...</li>
+			  </ul>
+		  </p>
+		  <h4>Fonctions disponibles:</h4>
+		  <p>
+		    Le module donne accès aussi à tous les autres boutons:
+		    <ul>
+			
+                <li>Standby</li>
+                <li>Back</li>
+                <li>Find</li>
+                <li>RedColour</li>
+                <li>GreenColour</li>
+                <li>YellowColour</li>
+                <li>BlueColour</li>
+                <li>Home</li>
+                <li>VolumeUp</li>
+                <li>VolumeDown</li>
+                <li>Mute</li>
+                <li>Options</li>
+                <li>Dot</li>
+                <li>Digit0</li>
+                <li>Digit1</li>
+                <li>Digit2</li>
+                <li>Digit3</li>
+                <li>Digit4</li>
+                <li>Digit5</li>
+                <li>Digit6</li>
+                <li>Digit7</li>
+                <li>Digit8</li>
+                <li>Digit9</li>
+                <li>Info</li>
+                <li>CursorUp</li>
+                <li>CursorDown</li>
+                <li>CursorLeft</li>
+                <li>CursorRight</li>
+                <li>Confirm</li>
+                <li>Next</li>
+                <li>Previous</li>
+                <li>Adjust</li>
+                <li>WatchTV</li>
+                <li>Viewmode</li>
+                <li>Teletext</li>
+                <li>Subtitle</li>
+                <li>ChannelStepUp</li>
+                <li>ChannelStepDown</li>
+                <li>Source</li>
+                <li>AmbilightOnOff</li>
+                <li>PlayPause</li>
+                <li>Pause</li>
+                <li>FastForward</li>
+                <li>Stop</li>
+                <li>Rewind</li>
+                <li>Record</li>
+                <li>Online</li>
+	
+			</ul>
+		</p>
+		  <h4>Macro:</h4>
+    	  <p>La commande WAIT permet de créer une pause d'une seconde. Cela peut être utile pour attendre le chargement du menu par le téléviseur (Voir exemple Macro dans le fichier XML).</p>
+          <pre><item>met la télé sur la freebox <tag> out.action.commande="Source,WAIT,CursorDown,WAIT,Confirm"; </tag></item></pre>
+		  <h4>A améliorer:</h4>
+		  <p>
+		    <ul>
+				<li>Ping sur téléviseur avant de tenter une requète (long délai avant échec communication).</li>
+                <li>Wakeonline ?!??</li>
+                <li>Utiliser les méthodes GET et POST directement pour certaines actions. (exemple : POST 'volume=20' plutôt que 'volumeUp')</li>
+			</ul>
+		</p>
+	  </div>
+	  <div class="span4"></div>
+  </div>
+</div>

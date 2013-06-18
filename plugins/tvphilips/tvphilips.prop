@@ -1,0 +1,10 @@
+{
+  "modules" : { 
+    "tvphilips"  : {
+      "description": "Envoie des messages sur la TV Philips",
+      "version"    : "1.0",
+      "tvip"       : "192.168.0.47",
+      "reponse"    : "true"
+    }
+  }
+}
